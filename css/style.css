@@ -1,0 +1,33 @@
+body {
+	background: #f0f0f0;
+	font-family: "Helvetica";
+}
+
+h1,h2,h3 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+#header {
+	height: 100px;
+	width: 100%;
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	line-height: 100px;
+}
+
+#header h1 {
+	margin: 0;
+}
+
+.page {
+	padding-top: 100px;
+}
+
+.member-picture {
+	display: table;
+	margin: 16px auto;
+}
