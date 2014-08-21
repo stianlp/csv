@@ -1,5 +1,5 @@
 body {
-	background: #f0f0f0;
+	background: #fafafa;
 	font-family: "Helvetica";
 }
 
@@ -21,6 +21,18 @@ h1,h2,h3 {
 #header h1 {
 	line-height: 100px;
 	margin: 0;
+}
+
+.header-so-me {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.header-so-me > img {
+	margin-right: 20px;
+	height: 60px;
+	width: auto;
 }
 
 .page {
