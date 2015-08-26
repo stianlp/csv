@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'build/',
         src: ['**/*'],
-        dest: '../surfwax-prod/surfwax/'
+        dest: '../alle-prod/surfwax/'
       }
     },
     clean: {
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         options: {
           force: true
         },
-        src: ['../surfwax-prod/']
+        src: ['../alle-prod/']
       }
     },
     watch: {
