@@ -1,14 +1,14 @@
 {
-  "name": "surfwax-app",
-  "description": "Selling surf wax like hell",
+  "name": "carstensmithsvenner",
+  "description": "CSV",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x",
-    "supervisor": "*"
+    "express": "^4.12.0"
   },
   "scripts": {
-    "start": "supervisor server.js"
+    "start": "node app.js",
+    "deploy": "gcloud preview app deploy app.yaml"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

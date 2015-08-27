@@ -11,8 +11,8 @@ i {
 }
 
 i.smaller {
-	color: #2E8BAF;
 	font-size: 48px;
+	color: #2E8BAF;
 }
 
 h1,h2,h3 {
@@ -202,11 +202,79 @@ h1.header {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	/*height: 100px;*/
-	/*background: rgba(252,252,252,0.4);*/
-	/*overflow: hidden;*/
+}
+
+.full-width-bottom:hover {
+	background: rgba(252,252,252,0.4);
+	/*background: rgba(221,75,57,0.3);*/
+	/*background: rgba(0,191,143,0.3);*/
+	/*background: rgba(46,139,175,0.3);*/
+	/*background: #dd4b39;*/
+	-webkit-transition: background-color 1.2s;
+	transition: background-color 1.2s;
 }
 
 .cursor-pointer {
 	cursor: pointer;
+}
+
+.bottom-slogan {
+	padding: 16px 8px;
+}
+
+.ass-container {
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*margin-top: 50%;*/
+	display: table;
+	margin: 0 auto;
+	/*width: 80%;*/
+	background: rgba(252,252,252,0.4);
+}
+
+.ass-text {
+	text-align: center;
+	font-size: 64px;
+}
+
+
+/* XS */
+@media screen and (max-width: 768px) {
+	h1.header {
+		font-size: 48px;
+	}
+}
+
+/* XXS */
+@media screen and (max-width: 500px) {
+	h1.header {
+		font-size: 32px;
+		line-height: 60px;
+	}
+
+	#header {
+		height: 60px;
+	}
+
+	i.smaller {
+		font-size: 24px;
+		color: #2E8BAF;
+	}
+
+	.cite-text, .bottom-slogan {
+		font-size: 18px;
+	}
+
+
+}
+
+/* XXXS */
+@media screen and (max-width: 330px) {
+	h1.header {
+		font-size: 24px;
+	}
+
+	.cite-text {
+		font-size: 14px;
+	}
 }
