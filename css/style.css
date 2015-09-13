@@ -25,10 +25,10 @@ p {
 }
 
 #header {
-		position: absolute;
-		z-index: 2;
-		padding: 32px;
-		width: 100%;
+	position: absolute;
+	z-index: 2;
+	padding: 32px;
+	width: 100%;
 }
 
 #header h1 {
@@ -38,18 +38,6 @@ p {
 	margin: 0;
 	line-height: 100px;
 }
-
-/*#header.bg {*/
-	/*height: 70px;*/
-	/*background: rgba(252,252,252,0.8);*/
-	/*padding: 0;*/
-/*}*/
-
-/*#header.bg h1 {*/
-	/*font-size: 48px;*/
-	/*margin: 0 16px;*/
-	/*line-height: 70px;*/
-/*}*/
 
 .header-so-me > img {
 	margin-right: 20px;
@@ -65,7 +53,7 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url("/img/kor6.png") no-repeat center center;
+	background: url("/img/korxx.png") no-repeat bottom center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -119,8 +107,45 @@ p {
 	line-height: 70px;
 }
 
+.contact-icon {
+	cursor: pointer;
+	font-size: 100px;
+	color: rgba(46,139,175,0.9);
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.contact-text {
+	display: table;
+	margin: -16px auto 0;
+}
+
+.contact-icon.ion-social-instagram:hover {
+	color: #675144;
+}
+
+.contact-icon.ion-social-facebook:hover {
+	color: #3b5998;
+}
+
+.contact-icon.ion-ios-telephone:hover {
+	color: #dd4b39;
+}
+
+.contact-icon.ion-ios-email:hover {
+	color: #00bf8f;
+}
+
 .bottom {
 	margin-bottom: 48px;
+}
+
+
+/* L */
+@media screen and (min-width: 768px) {
+	.not-large {
+		display: none !important;
+	}
 }
 
 /* S */
@@ -131,10 +156,12 @@ p {
 }
 
 /* XS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 	#header {
 		height: 70px;
+		position: fixed;
+		width: 100%;
 		background: rgba(252,252,252,0.8);
 		padding: 0;
 	}
@@ -144,7 +171,6 @@ p {
 		margin: 0 16px;
 		line-height: 70px;
 	}
-	
 
 	#click-bottom {
 		position: relative;
@@ -161,6 +187,20 @@ p {
 		text-align: center;
 		font-size: 36px;
 	}
+
+	.page {
+		padding-top: 16px;
+	}
+
+	.small-choir-image {
+		margin-top: 70px;
+		width: 100%;
+		height: auto;
+	}
+
+	.not-small {
+		display: none !important;
+	}
 }
 
 /* XXS */
@@ -174,7 +214,6 @@ p {
 		line-height: 60px;
 	}
 
-
 	#second-header > h1 {
 		text-align: center;
 		font-size: 24px;
@@ -183,6 +222,10 @@ p {
 	.click-bottom > i {
 		font-size: 24px;
 		color: #073547;
+	}
+
+	.small-choir-image {
+		margin-top: 60px;
 	}
 
 	.cite-text, .bottom-slogan {
@@ -206,10 +249,6 @@ p {
 
 
 /* Helpers */
-
-.contact-icon {
-	font-size: 100px;
-}
 
 .blue-color {
 	color: #2E8BAF;

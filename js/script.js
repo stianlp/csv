@@ -5,23 +5,19 @@
 
         $('#click-bottom').click(function() {
             $('html,body').animate({
-                    scrollTop: $("#choir-image").prop('scrollHeight')},
-                {
-                    duration: 1000,
-                    complete: function () {
-                        console.log('hey');
-                        //$('#header').addClass('bg');
-                    }
-                }
+                scrollTop: $("#choir-image").prop('scrollHeight')},
+                {duration: 800}
             );
         });
 
         $(window).scroll(function() {
             console.log(document.getElementById("page").getBoundingClientRect().top);
-            if (document.getElementById("page").getBoundingClientRect().top <= 0) {
-                $('#second-header').show('slow');
-            } else {
-                $('#second-header').hide(500);
+            if (window.innerWidth > 767) {
+                if (document.getElementById("page").getBoundingClientRect().top <= 0) {
+                    $('#second-header').show('slow');
+                } else {
+                    $('#second-header').hide(300);
+                }
             }
         });
 
