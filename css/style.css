@@ -52,7 +52,7 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url("/img/korxx.png") no-repeat bottom center;
+	background: url("/img/kor-large.png") no-repeat bottom center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -84,7 +84,7 @@ p {
 }
 
 .page {
-	/*min-height: 1000px;*/
+	min-height: 1000px;
 	min-height: 110vh;
 	padding-top: 86px;
 	padding-bottom: 4px;
