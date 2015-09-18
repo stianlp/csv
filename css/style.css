@@ -6,7 +6,6 @@ body {
 
 h1 {
 	font-family: 'Pacifico', cursive;
-	/*font-family: 'Lobster Two', cursive;*/
 	font-size: 64px;
 	font-style: italic;
 }
@@ -207,6 +206,14 @@ p {
 
 /* XXS */
 @media screen and (max-width: 500px) {
+	h2 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
 	#header {
 		height: 60px;
 	}
@@ -231,7 +238,7 @@ p {
 	}
 
 	.cite-text, .bottom-slogan {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 

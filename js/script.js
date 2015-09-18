@@ -21,5 +21,9 @@
             }
         });
 
+        $(window).resize(function() {
+            $('#second-header').hide();
+        });
+
     });
 }());
